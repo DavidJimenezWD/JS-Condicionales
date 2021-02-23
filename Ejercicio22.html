@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1=parseInt(window.prompt('Introduce un valor'));
+        let num2=parseInt(window.prompt('Introduce otro valor'));
+        let num3=parseInt(window.prompt('Introduce un ultimo valor'));
+
+        if(num1<num2){
+            if(num1<num3){
+                window.alert(num1);
+            }else{
+                window.alert(num3);
+            }
+
+
+        }else if(num1>num2){
+            if(num2<num3){
+                window.alert(num2);
+            }else{
+                window.alert(num3);
+            }
+        }
+
+    </script>
+</body>
+</html>

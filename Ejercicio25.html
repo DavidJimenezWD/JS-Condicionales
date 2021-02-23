@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name = window.prompt('Introduce tu Nombre');
+        let cash = parseFloat(window.prompt('Introduce el importe en Ventas'));
+
+        if (cash > 500) {
+
+            let extra = cash * 5 / 100;
+            window.alert('El vendedor ' + name + ' a tenido unas ventas de: ' + cash + ' y un extra de: ' + extra);
+
+        } else {
+            window.alert('El vendedor ' + name + ' a tenido unas ventas de: ' + cash);  
+        }
+
+
+    </script>
+</body>
+
+</html>

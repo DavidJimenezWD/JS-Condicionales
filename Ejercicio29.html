@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let frase = window.prompt('Escribe una frase para Bob');
+
+        if (frase.indexOf('?') !== -1) {
+            if (frase.indexOf('!') !== -1) {
+                window.alert('¡Eh, tranquilízate! Yo sé lo que hago');
+            } else {
+                window.alert('¡Claro!');
+            }
+        } else if (frase.indexOf('!') !== -1) {
+            window.alert('¡Eh!, tranquilízate');
+        } else if (frase.length === 0) {
+            window.alert('Vale con que esas tenemos...');
+        } else {
+            window.alert('Sin mas');
+        }
+
+
+    </script>
+</body>
+
+</html>

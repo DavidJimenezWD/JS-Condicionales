@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let grados=parseFloat(window.prompt('Introduce una temperatura'));
+
+        let unidad=window.prompt('Para centigrados escribir C o para Fahrenheit escribir F').toLocaleUpperCase();
+
+        switch(unidad){
+
+            case 'C':
+                window.alert((grados-32)*5/9);
+                break;
+
+            case 'F':
+                window.alert(grados*9/5+32);
+                break;
+                
+            default:
+                window.alert('No has elegido la unidad');
+                break;    
+        }
+
+
+
+
+    </script>
+</body>
+</html>

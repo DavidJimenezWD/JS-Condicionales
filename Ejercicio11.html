@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1=window.prompt('Introduce un numero entre 25 y 75');
+        let num2=window.prompt('Introduce otro numero entre 25 y 75');
+
+        if(num1.substring(0,1)===num2.substring(0,1)){
+            window.alert('Hay un digito en comun');
+        }else if(num1.substring(1)===num2.substring(0,1)){
+            window.alert('Hay un digito en comun');
+
+        }else if(num1.substring(0,1)===num2.substring(1)){
+            window.alert('Hay un digito en comun');
+
+        }else if(num1.substring(1)===num2.substring(1)){
+            window.alert('Hay un digito en comun');
+
+        }else{
+            window.alert('No hay un digito en comun');
+
+        }
+                 
+
+    </script>
+</body>
+</html>

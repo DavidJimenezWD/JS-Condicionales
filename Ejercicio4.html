@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = parseInt(window.prompt('Introduce un numero'));
+        let num2 = parseInt(window.prompt('Introduce otro numero'));
+        let num3 = parseInt(window.prompt('Introduce otro numero mas'));
+
+        if (num1 == num2 - 20) {
+            console.log('La diferencia del primero y el segundo es de 20 menos');
+
+        } else if (num1 == num3 - 20) {
+            console.log('La diferencia del primero y el tercero es de 20 menos');
+
+        } else if (num2 == num1 - 20) {
+            console.log('La diferencia entre el segundo  y el primero es de 20 menos');
+
+        } else if (num2 == num3 - 20) {
+            console.log('La diferencia entre el segundo  y el tercero es de 20 menos');
+
+        } else if (num3 == num1 - 20) {
+            console.log('La diferencia entre el tercero  y el primero es de 20 menos');
+
+        } else if (num3 == num2 - 20) {
+            console.log('La diferencia entre el tercero y el segundo es de 20 menos');
+        
+        }else{
+            console.log('Ninguno tenia menos 20');
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

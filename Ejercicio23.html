@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1=parseInt(window.prompt('Escribe una nota entre 0 y 5'));
+        let nota2=parseInt(window.prompt('Escribe una nota entre 0 y 5'));
+        let nota3=parseInt(window.prompt('Escribe una nota entre 0 y 5'));
+
+        let notaCompleta=nota1+nota2+nota3;
+
+        if(notaCompleta>=0&&notaCompleta<5){
+            window.alert('Suspenso');
+        }else if(notaCompleta>=5&&notaCompleta<6){
+            window.alert('Suficiente');
+        }else if(notaCompleta>=6&&notaCompleta<7){
+            window.alert('Bien');
+        }else if(notaCompleta>=7&&notaCompleta<9){
+            window.alert('Notable');
+        }else if(notaCompleta>=9&&notaCompleta<=10){
+            window.alert('Sobresaliente');
+        }else{
+            window.alert('La nota no puede superar los 10 puntos');
+        }    
+       
+        
+    </script>
+</body>
+</html>

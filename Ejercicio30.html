@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let numero = parseInt(window.prompt('0: Piedra, 1:Papel, 2:Tijera. Elige una opción'));
+
+        let numeroAleatorio = Math.floor(Math.random() * 3);
+
+        if (numero === 0 && numeroAleatorio === 0 || numero === 1 && numeroAleatorio === 1 || numero === 2 && numeroAleatorio === 2) {
+            window.alert('Empate el jugador a elegido: ' + numero.toString().substring(0) + ' y la maquina a elegido: ' + numeroAleatorio.toString().substring(0));
+        } else if (numero === 0 && numeroAleatorio === 1 || numero === 1 && numeroAleatorio === 2 || numero === 2 && numeroAleatorio === 0) {
+            window.alert('Pierde el Jugador a elegido: ' + numero.toString().substring(0) + ' y la maquina a elegido: ' + numeroAleatorio.toString().substring(0));
+        } else {
+            window.alert('Gana el Jugador a elegido: ' + numero.toString().substring(0) + ' y la maquina a elegido: ' + numeroAleatorio.toString().substring(0));
+        }
+
+
+    </script>
+</body>
+
+</html>

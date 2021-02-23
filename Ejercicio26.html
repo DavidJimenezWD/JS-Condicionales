@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let edad = parseInt(window.prompt('Introduce tu edad'));
+
+        if (edad < 18) {
+            console.log('No tienes la edad');
+        } else {
+
+            let carnet = window.prompt('Tienes carnet de conducir?').toLowerCase();
+
+            if (carnet === 'si') {
+                let nombre = window.prompt('Introduce tu nombre');
+                let apellido = window.prompt('Introduce tu apellido');
+                let ciudad = window.prompt('Ciudad de recogida');
+                let dias = parseInt(window.prompt('Numero de dias de alquiler'));
+                let coste;
+
+                if (dias >= 7) {
+                    coste = 150;
+                } else {
+                    coste = dias * 25;
+                }
+
+                console.log(`El cliente se llama: ${nombre} ${apellido} su ciudad es: ${ciudad} y el coste del alquiler es de: ${coste}`);
+
+            } else {
+                console.log('No puedes alquilar sin carnet de conducir');
+            }
+
+
+        }
+
+    </script>
+</body>
+
+</html>

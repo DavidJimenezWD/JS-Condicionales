@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string=window.prompt('Escribe una frase');
+
+        if(string.length%2===0){
+
+            let mitad=string.length/2;
+
+            window.alert(string.substring(mitad-1,mitad+1));
+            
+        }
+
+        else{
+
+            let mitad=string.length/2;
+
+            window.alert(string.substring(mitad,mitad+1));
+
+        }
+
+
+    </script>
+</body>
+</html>

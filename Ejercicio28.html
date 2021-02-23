@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero=window.prompt('Introduce un numero de 3 cifras');
+
+        if(numero.length>=3){
+            
+            let comprobacion=parseInt(numero.substring(0,1));
+            let comprobacion2=parseInt(numero.substring(1,2));
+            let comprobacion3=parseInt(numero.substring(2));
+            
+            if(comprobacion%2===0&&comprobacion2%2===0&&comprobacion3%2===0){
+                window.alert('Todos son Pares');
+            }else if(comprobacion%2!==0&&comprobacion2%2!==0&&comprobacion3%2!==0){
+                window.alert('Todos son Impares');    
+            }else{
+                window.alert('El número tiene cifras Pares e Impares');
+            }
+
+        }else{
+            window.alert('El numero tiene que tener tres cifras');
+        }
+
+    </script>
+</body>
+</html>
